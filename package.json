@@ -1,12 +1,19 @@
 {
-  "name": "application-name",
+  "name": "epamr",
+  "author": "Khalilur Rahman",
   "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krahman/epamr.com.git"
+  },
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
     "express": "3.4.7",
-    "jade": "*"
+    "jade": "*",
+    "mongoose": "~3.8.4",
+    "lodash": "~2.4.1"
   }
 }
