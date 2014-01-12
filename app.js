@@ -3,18 +3,18 @@
  * Module dependencies.
  */
 
-var express = require('express')
-    ,routes = require('./routes')
-    ,user = require('./routes/user')
-    ,http = require('http')
-    ,path = require('path');
+var express = require('express'),
+    routes = require('./routes'),
+    user = require('./routes/user'),
+    http = require('http'),
+    path = require('path');
 
 // load configuration
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // Initializing database
-var config = require('./config/config')
-    ,mongoose = require('mongoose');
+var config = require('./config/config'),
+    mongoose = require('mongoose');
 
 var db = mongoose.connect(config.db);
 
