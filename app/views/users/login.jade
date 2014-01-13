@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    div.navbar.navbar-top.navbar-inverse
+        div.navbar-inner
+            div.container-fluid
+                a.brand(href='#') PAMER: Patient Medical (Electronic) Records
+                ul.nav.pull-right
+                    li.toggle-primary-sidebar.hidden-desktop(data-toggle='collapse', data-target='.nav-collapse-primary')
+                        button.btn.btn-navbar(type='button')
+                            i.icon-th-list
+                    li.hidden-desktop(data-target='.nav-collapse-top')
+                        button.btn.btn-navbar(type='button')
+                            i.icon-align-justify
+    div.container
+        div.span4.offset4
+            div.padded
+                div.login.box(style='margin-top:80px;')
+                    div.box-header
+                        span.title
+                            strong #{title} FORM
+                    div.box-content.padded
+                        form.separate-sections(action='/login', method='post')
+                            div.input-prepend
+                                span.add-on(href='#')
+                                    i.icon-user
+                                input(type='text', placeholder='username', name='username')
+                            div.input-prepend
+                                span.add-on(href='#')
+                                    i.icon-key
+                                input(type='password', placeholder='password', name='password')
+                            div
+                                input.btn.btn-blue.btn-block(type='submit') Login&nbsp;
+                                    i.icon-signin
+                        div
+                            a(href='/forget/username') Forget your&nbsp;
+                                strong username?
+                        div
+                            a(href='/forget/password') Forget your&nbsp;
+                                strong password?
