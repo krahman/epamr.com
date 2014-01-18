@@ -5,6 +5,7 @@
 
 var express = require('express'),
     routes = require('./routes'),
+    passport = require('passport'),
     user = require('./routes/user'),
     http = require('http'),
     path = require('path');
