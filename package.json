@@ -8,7 +8,8 @@
     "url": "https://github.com/krahman/epamr.com.git"
   },
   "scripts": {
-    "start": "node node_modules/grunt-cli/bin/grunt"
+    "start": "node node_modules/grunt-cli/bin/grunt",
+    "postinstall" : "node node_modules/.bin/bower install"
   },
   "dependencies": {
     "express": "~3.4.8",
